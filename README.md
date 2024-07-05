@@ -27,8 +27,9 @@ The News App React project is a modern web application designed to deliver real-
 ```
 
 - React: Frontend library for building user interfaces.
-- Bootstrap: CSS framework for responsive design and UI components.
+- Bootstrap: CSS framework for responsive design and UI components. Also, i add some animations their. 
 - News API: Source of real-time news data, integrated using fetch for asynchronous data fetching.
+  (Note: You can generate your own api and and update that in .env file.) 
 
 ## Installation
 
@@ -58,6 +59,7 @@ To run the app locally, use the following npm script:
 ```
 
 ## Screenshots:
+![Screenshot 2024-07-05 135250](https://github.com/tusharganvir21/news-app-react/assets/170413274/34ff7c73-0189-49df-89c8-440bf82298b6)
 
 
 ## Thank You for Reading!
