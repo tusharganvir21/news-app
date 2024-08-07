@@ -6,7 +6,7 @@ export const Newsboard = ({ category }) => {
 
   useEffect(() => {
     const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=27fd7377d7eb480f9fe5ee587f92644c`;
-    fetch(apiUrl)
+    fetch(url)
       .then((response) => response.json())
       .then((data) => {
         console.log("Data received:", data);
