@@ -1,12 +1,14 @@
 {
+  "homepage": "https://tusharganvir21.github.io/news-react-app/",
   "name": "news-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d dist",
     "start": "next start",
     "export": "next export",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
