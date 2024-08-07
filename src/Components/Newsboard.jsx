@@ -8,9 +8,25 @@ export const Newsboard = ({ category }) => {
     const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${
       import.meta.env.VITE_API_KEY
     }`;
-    fetch(url)
+    fetch(apiUrl)
       .then((response) => response.json())
-      .then((data) => setArticles(data.articles));
+      .then((data) => {
+        console.log("Data received:", data);
+        if (!data || !data.articles) {
+          console.error("Invalid data structure:", data);
+          throw new Error("Invalid data structure");
+        }
+        // Check if articles is an array before accessing its length
+        if (Array.isArray(data.articles) && data.articles.length > 0) {
+          // Process articles
+          console.log("Articles:", data.articles);
+        } else {
+          console.log("No articles found or invalid articles structure");
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
   }, [category]);
 
   return (
