@@ -59,7 +59,8 @@ To run the app locally, use the following npm script:
 ```
 
 ## Screenshots:
-![Screenshot 2024-07-05 135250](https://github.com/tusharganvir21/news-app-react/assets/170413274/34ff7c73-0189-49df-89c8-440bf82298b6)
+![Screenshot 2024-07-05 135250](https://github.com/user-attachments/assets/33302cb2-7288-42f0-8943-c0c65ea3da75)
+
 
 
 ## Thank You for Reading!
